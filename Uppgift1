@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Uppgift1
+namespace Uppgift2
 {
     class Program
     {
@@ -12,16 +12,20 @@ namespace Uppgift1
         {
             int apple = 7;
             int paron = 13;
+            Console.WriteLine("Skriv in x");
+            Console.WriteLine("Skriv in y");
+            int x = int.Parse(Console.ReadLine());
+            int y = int.Parse(Console.ReadLine());
 
-            if (apple < paron)
+            if (x * apple < y * paron)
             {
                 Console.WriteLine("Petra");
             }
-            if (apple * 13 == paron * 7)
+            else if (x * apple == y * paron)
             {
                 Console.WriteLine("Lika");
             }
-            if (apple * 15 > paron * 8)
+            else if (x * apple > y * paron)
             {
                 Console.WriteLine("Axel");
             }
